@@ -1,0 +1,218 @@
+@font-face {
+  font-family: BeutyRachela;
+  src: url(SaintCarell_PERSONAL_USE_ONLY.otf);
+}
+
+body {
+  margin: 0;
+}
+
+.logo {
+  font-family: BeutyRachela;
+  font-size: 120%;
+  margin-left: 1%;
+}
+
+.pasek {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+}
+
+.wyszukiwanie {
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.input {
+  width: 150px;
+  padding: 10px 0px 10px 40px;
+  border-radius: 9999px;
+  border: solid 1px #333;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  opacity: 0.8;
+}
+
+.wyszukiwanie svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(0, -50%);
+}
+
+.input:focus {
+  opacity: 1;
+  width: 250px;
+}
+
+.koszyk {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.user {
+  width: 20px;
+  height: 20px;
+}
+
+.menu {
+  padding: 0.5rem;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px 0 rgba(#000, 0.075);
+  margin-right: 15px;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+  &:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+    transform-origin: center right;
+    background-color: #eee;
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    width: 130px;
+
+    &:before,
+    .link-title {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
+.link-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  left: 18px;
+  position: absolute;
+  svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: block;
+  text-align: center;
+  text-indent: 28px;
+  width: 100%;
+}
+
+.zdjecia {
+  display: flex;
+  margin: 30px;
+  justify-content: space-between;
+
+  div {
+    position: relative;
+  }
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+button {
+  position: absolute;
+
+  right: 200px;
+  bottom: -50px;
+
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+p {
+  width: 500px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.opinia {
+  background-color: aliceblue;
+  width: 700px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+.zawartosc {
+  background-color: aliceblue;
+  width: 700px;
+  border-radius: 15px;
+  position: relative;
+  margin-left: 30%;
+  margin-top: 15px;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 7.5%;
+
+}
+
+.opis1 {
+  margin-left: 15px;
+}
