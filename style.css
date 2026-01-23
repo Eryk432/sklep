@@ -240,3 +240,15 @@ p {
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 2400px;
+  }
+
+  .zdjecia {
+    flex-direction: column;
+  }
+}
