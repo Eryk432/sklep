@@ -151,11 +151,6 @@ body {
 }
 
 .button {
-  position: absolute;
-
-  right: 200px;
-  bottom: -50px;
-
   padding: 1.3em 3em;
   font-size: 12px;
   text-transform: uppercase;
@@ -183,7 +178,6 @@ body {
 }
 
 p {
-  width: 500px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -245,7 +239,6 @@ p {
   body {
     flex-direction: column;
     flex-wrap: wrap;
-    height: 2400px;
   }
 
   .zdjecia {
@@ -257,7 +250,6 @@ p {
   body {
     flex-direction: column;
     flex-wrap: wrap;
-    height: 2400px;
   }
 
   .zdjecia {
@@ -267,5 +259,75 @@ p {
   .centrowanie {
     display: flex;
     justify-content: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.zdjecia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.zdjecia img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+p {
+  width: 100%;
+  max-width: 500px;
+}
+
+.button {
+  position: static;
+  margin-top: 15px;
+}
+
+.pasek {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 1500px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  .zdjecia {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px;
+  }
+
+  .centrowanie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .zdjecia img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  p {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .button {
+    position: static;
+    margin-top: 15px;
   }
 }
