@@ -331,3 +331,17 @@ p {
     margin-top: 15px;
   }
 }
+
+@media (min-width: 1024px) {
+  .button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .centrowanie {
+    position: relative;
+    padding-bottom: 80px;
+  }
+}
