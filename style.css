@@ -5,6 +5,9 @@
 
 body {
   margin: 0;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .logo {
@@ -199,7 +202,8 @@ p {
   border-radius: 15px;
   position: relative;
   margin-left: 30%;
-  margin-top: 15px;
+  margin-top: 15x;
+  height: 400px;
 }
 
 footer {
@@ -210,9 +214,29 @@ footer {
   justify-content: center;
   align-items: end;
   margin-top: 7.5%;
-
 }
 
 .opis1 {
   margin-left: 15px;
+}
+
+.tekstl {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.wielkosc {
+  height: 20px;
+  margin-bottom: 40px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
